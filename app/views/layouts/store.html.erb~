@@ -12,7 +12,7 @@
         </div>
         <div id ="columns">
             <div id="cart">
-                <%= render(:partial => "cart", :object = @cart) %>
+                <%= render(:partial => "cart", :object => @cart) %>
             </div>
             <div id="side">
                 <%= link_to "Home", home_path %>

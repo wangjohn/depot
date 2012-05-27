@@ -8,8 +8,8 @@ Depot::Application.routes.draw do
   # first created -> highest priority.
 
   # Sample of regular route:
+    match '/store/index' => "store#index", :as => :store_path
     match '/store/empty_cart' => "store#empty_cart", :as => :store_empty_cart
-    match '/store/add_to_cart' => "store#add_to_cart", :as => :store_add_to_cart
     match '/' => "home#index", :as => :home
   # Keep in mind you can assign values other than :controller and :action
 
