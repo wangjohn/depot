@@ -11,6 +11,9 @@
             <%= @page_title || "Pragmatic Bookshelf" %>
         </div>
         <div id ="columns">
+            <div id="cart">
+                <%= render(:partial => "cart", :object => @cart) %>
+            </div>
             <div id="side">
                 <%= link_to "Home", home_path %>
                 <%= link_to "Products", products_path %>

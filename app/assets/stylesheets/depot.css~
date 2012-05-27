@@ -52,7 +52,7 @@ h1 {
 
 #product-list .list-line-odd {
   background:   #f8b0f8;
-
+}
 
 /* An entry in the store catalog */
 

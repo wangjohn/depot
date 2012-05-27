@@ -11,10 +11,13 @@
             <%= @page_title || "Pragmatic Bookshelf" %>
         </div>
         <div id ="columns">
+            <div id="cart">
+                <%= render(:partial => "cart", :object = @cart) %>
+            </div>
             <div id="side">
                 <%= link_to "Home", home_path %>
                 <%= link_to "Products", products_path %>
-                <%= link_to "Store", store_path %>
+                <%= link_to "Store", store_index_path %>
             </div>
             <div id="main">
                 <% if flash[:notice] %>
